@@ -1,12 +1,25 @@
 <header role="banner">
     <div class="site-branding">
-      <a href="{{ "/" | relative_url }}" aria-label="Home">{{ site.title }}</a>
+    <a href="{{ "/" | relative_url }}" aria-label="Home">{{ site.title }}</a>
+    {% if site.description %}
+      <p class="site-tagline">{{ site.description }}</p>
+    {% endif %}
     </div>
     <nav aria-label="Primary">
       <ul>
         <li><a href="{{ "/" | relative_url }}" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
         <li><a href="{{ "/about/" | relative_url }}" {% if page.url contains "/about" %}aria-current="page"{% endif %}>About</a></li>
         <li><a href="{{ "/feed.xml" | relative_url }}">RSS</a></li>
+      {% if site.github and site.github.repository_url %}
+        <li>
+          <a href="{{ site.github.repository_url }}/new/main/whoissean-blog/_posts" rel="noopener" target="_blank">New Post (GitHub)</a>
+        </li>
+        {% if page.path %}
+          <li>
+            <a href="{{ site.github.repository_url }}/edit/main/whoissean-blog/{{ page.path }}" rel="noopener" target="_blank">Edit This Page</a>
+          </li>
+        {% endif %}
+      {% endif %}
       </ul>
     </nav>
   </header>

@@ -52,16 +52,16 @@ whoissean-blog/
 - [x] HTTPS enabled (automatic with .dev domains)
 
 ### 🔄 In Progress
-- [ ] Content creation (mandatory agentic CLI tools post)
-- [ ] Dark theme customization
+- [x] Content creation (mandatory agentic CLI tools post - draft created)
+- [x] Dark theme customization (typography, code blocks, tables, blockquotes)
 - [ ] Mobile responsiveness optimization
 - [ ] SEO implementation
 - [ ] Analytics setup
 
 ### 📋 Next Steps
-- [ ] Write mandatory agentic CLI tools post (Cursor experience)
+- [ ] Finish mandatory agentic CLI tools post with screenshots and examples
 - [ ] Create 2-3 additional blog posts
-- [ ] Implement dark theme design
+- [ ] Add mobile menu toggle and verify responsiveness
 - [ ] Add comment system
 - [ ] Set up Google Analytics
 - [ ] Final testing and optimization

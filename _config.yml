@@ -20,10 +20,11 @@
 
 title: WHOISsean's Blog
 email: sfh1980@yahoo.com
-description: "A blog created for a hackathon about development, AI tools, and personal projects. It will be updated with new posts and projects as I work on them, as well as my thoughts and experiences. My wife will also hijack it from time to time to add her own special touches"
+description: "This is a blog created for a hackathon. I will talk about web/app development, AI tools, and other personal projects and/or musings. It will be updated with new posts about these projects as I work on them, as well as my thoughts and experiences. My wife will also hijack it from time to time to add her own special touches"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://whoissean.dev"
 github_username:  sfh1980
+repository: sfh1980/WHOISsean.dev
 
 # Build settings
 theme: minima
