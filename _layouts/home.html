@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<section aria-labelledby="recent-posts">
+  <h1 id="recent-posts">Recent Posts</h1>
+  <ul>
+    {% for post in site.posts limit:10 %}
+      <li>
+        <article>
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          <p><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></p>
+          {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 180 }}</p>{% endif %}
+        </article>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

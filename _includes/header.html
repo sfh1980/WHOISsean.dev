@@ -1,0 +1,12 @@
+<header role="banner">
+    <div class="site-branding">
+      <a href="{{ "/" | relative_url }}" aria-label="Home">{{ site.title }}</a>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="{{ "/" | relative_url }}" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
+        <li><a href="{{ "/about/" | relative_url }}" {% if page.url contains "/about" %}aria-current="page"{% endif %}>About</a></li>
+        <li><a href="{{ "/feed.xml" | relative_url }}">RSS</a></li>
+      </ul>
+    </nav>
+  </header>
