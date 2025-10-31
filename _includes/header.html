@@ -8,7 +8,6 @@
         <li><a href="{{ "/" | relative_url }}" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
         <li><a href="{{ "/about/" | relative_url }}" {% if page.url contains "/about" %}aria-current="page"{% endif %}>About</a></li>
         <li><a href="{{ "/analytics/" | relative_url }}" {% if page.url contains "/analytics" %}aria-current="page"{% endif %}>Analytics</a></li>
-        <li><a href="{{ "/lighthouse/" | relative_url }}" {% if page.url contains "/lighthouse" %}aria-current="page"{% endif %}>Performance</a></li>
         <li><a href="{{ "/feed.xml" | relative_url }}">RSS</a></li>
       </ul>
     </nav>
