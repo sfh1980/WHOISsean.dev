@@ -181,3 +181,39 @@ section#recent-posts li { list-style: none; margin-bottom: 1rem; }
 .btn:hover { border-color: var(--accent); color: var(--accent); }
 #comments { margin-top: 2rem; }
 
+/* Post content images and videos */
+article img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+}
+
+/* Image captions - smaller and italic */
+article img + p,
+article img + p em,
+article img + p > em {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--muted);
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+article video {
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+@media (max-width: 768px) {
+  article img {
+    max-width: 100%;
+  }
+  article video {
+    width: 100%;
+  }
+}
+

@@ -40,8 +40,8 @@ plugins:
 # Custom domain
 cname: whoissean.dev
 
-# Google Analytics (optional - add your Measurement ID here)
-# google_analytics: G-XXXXXXXXXX
+# Google Analytics
+google_analytics: G-3PF44HG20G
 
 # Exclude from processing.
 # The following items will not be processed, by default.
