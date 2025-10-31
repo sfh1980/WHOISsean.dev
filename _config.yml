@@ -40,6 +40,9 @@ plugins:
 # Custom domain
 cname: whoissean.dev
 
+# Google Analytics (optional - add your Measurement ID here)
+# google_analytics: G-XXXXXXXXXX
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
