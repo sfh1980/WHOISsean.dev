@@ -54,7 +54,7 @@ whoissean-blog/
 ### 🔄 In Progress
 - [x] Content creation (mandatory agentic CLI tools post - draft created)
 - [x] Dark theme customization (typography, code blocks, tables, blockquotes)
-- [ ] Mobile responsiveness optimization
+- [x] Mobile responsiveness (initial pass OK on phone)
 - [ ] SEO implementation
 - [ ] Analytics setup
 
@@ -62,8 +62,9 @@ whoissean-blog/
 - [ ] Finish mandatory agentic CLI tools post with screenshots and examples
 - [ ] Create 2-3 additional blog posts
 - [ ] Add mobile menu toggle and verify responsiveness
-- [ ] Add comment system
+- [x] Add comment system (Giscus)
 - [ ] Set up Google Analytics
+- [ ] SEO: default OG/Twitter image, robots.txt
 - [ ] Final testing and optimization
 
 ## 🚀 Development Commands
