@@ -20,4 +20,8 @@ Contribute/engage
 - Share posts you find useful — it helps others discover the content
 
 
-Thanks for stopping by — I’m keeping posts concise, useful, and honest. If you’re curious how something was built or why I chose an approach, ask in the comments and I’ll dig in.
+Thanks for stopping by — I'm keeping posts concise, useful, and honest. If you're curious how something was built or why I chose an approach, ask in the comments and I'll dig in.
+
+---
+
+**Source code**: https://github.com/sfh1980/WHOISsean.dev
