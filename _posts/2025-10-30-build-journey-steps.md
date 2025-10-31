@@ -9,7 +9,7 @@ Below is a concise, ordered list of the key steps I took to get the site to its 
 
 1. Chose the project scope (Tech Education Blog Hackathon) and purchased the domain `whoissean.dev` (Porkbun) with HTTPS.
 2. Created a GitHub repository and selected Jekyll as the tech stack (GitHub Pages friendly).
-3. Installed Ruby, Jekyll, and Bundler locally; scaffolded a new Jekyll site.
+3. Installed Ruby, Jekyll (a Ruby Gem), and Bundler (Ruby package manager) locally; scaffolded a new Jekyll site.
 4. Set initial configuration in `_config.yml` (title, url, plugins, description, GitHub repo info).
 5. Ran the dev server locally (`bundle exec jekyll serve`) to verify the baseline theme (Minima).
 6. Overrode the theme with custom templates:
@@ -33,15 +33,23 @@ Below is a concise, ordered list of the key steps I took to get the site to its 
 22. Planned media (screenshots and short clips) under `assets/images` and `assets/videos` with responsive embeds.
 23. Confirmed initial mobile responsiveness (tested on phone) and basic JS behavior.
 24. Set up header/footer/domain links and repo metadata for easier navigation and maintenance.
+25. Integrated Google Analytics (GA4) with tracking ID `G-3PF44HG20G` in `_config.yml` and `default.html`.
+26. Created `robots.txt` and verified `jekyll-sitemap` generates `sitemap.xml` automatically.
+27. Added images and videos to the Agentic CLI Tools + MCP post (Jekyll structure screenshot, code diff example, terminal output video).
+28. Proofread and refined the mandatory post content for grammar, clarity, and logical flow.
+29. Resized images to 50% width and left-aligned them with smaller, italicized captions.
+30. Replaced large video embeds with clickable thumbnail placeholders (35% width) that open videos in fullscreen modals on click.
+31. Added video thumbnail modal system with JavaScript: clickable thumbnails, fullscreen overlay, close button, Escape key support.
+32. Added section header "Here is an example of the Cursor chat agent in action" above video thumbnail.
 
 Next targets
-1. Finish the Agentic CLI + MCP article with screenshots/diffs and a short demo clip.
-2. Add Google Analytics (gtag.js) and SEO defaults (OG/Twitter image, robots.txt).
-3. Optional: implement a visible mobile menu toggle for small screens.
+1. Optional: implement a visible mobile menu toggle for small screens.
+2. Final Lighthouse performance check and optimization.
 
 Notes / reproducibility
 - Edit only source files (`_layouts`, `_includes`, `_posts`, `assets`); `_site/` is generated.
 - Pushing to `main` triggers a GitHub Pages rebuild; allow ~1–3 minutes and hard-refresh.
-- Media usage: images as WebP/PNG; videos as MP4/WebM, embedded via `<video>`.
+- Media usage: images as PNG/WebP (resized to 50% width, left-aligned); videos as MP4 (embedded as clickable thumbnails that open in fullscreen modals).
+- Video thumbnails: Use `.video-thumbnail-container` div with `data-video-src` attribute; JavaScript handles modal display on click.
 
 

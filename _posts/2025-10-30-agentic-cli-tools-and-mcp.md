@@ -45,11 +45,18 @@ What I learned in using agentic tools:
 <img src="{{ "/assets/images/cursor-example-screenshot-1.png" | relative_url }}" alt="Cursor interface example" style="max-width: 50%; height: auto; display: block; margin: 1rem 0;">
 *This is what this hackathon project looks like in my Cursor IDE*
 
+## Here is an example of the Cursor chat agent in action
 
-<video controls playsinline preload="auto" width="800" style="max-width: 100%; height: auto; display: block; margin: 1rem auto;">
-  <source src="{{ "/assets/videos/cursor-chat-agent-example.mp4" | relative_url }}" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="video-thumbnail-container" data-video-src="{{ "/assets/videos/cursor-chat-agent-example.mp4" | relative_url }}" role="button" tabindex="0" aria-label="Play video: Cursor chat agent example">
+  <div class="video-thumbnail-placeholder">
+    <div class="play-button-overlay">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+    </div>
+    <p class="video-thumbnail-label">Click to play video</p>
+  </div>
+</div>
 *Short clip showing Cursor's chat agent helping me understand the codebase structure*
 
 ## MCP and MCP servers (Model Context Protocol)

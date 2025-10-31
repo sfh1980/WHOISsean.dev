@@ -208,12 +208,124 @@ article video {
   margin: 1rem auto;
 }
 
+/* Video thumbnail with play button */
+.video-thumbnail-container {
+  position: relative;
+  max-width: 35%;
+  margin: 1rem 0;
+  cursor: pointer;
+  background: var(--bg-elev);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.video-thumbnail-container:hover {
+  transform: scale(1.02);
+  border-color: var(--accent);
+}
+
+.video-thumbnail-container:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.video-thumbnail-placeholder {
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, var(--bg-elev) 0%, var(--bg) 100%);
+  position: relative;
+}
+
+.play-button-overlay {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(76, 194, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg);
+  transition: transform 0.2s, background 0.2s;
+  margin-bottom: 0.5rem;
+}
+
+.play-button-overlay svg {
+  width: 32px;
+  height: 32px;
+}
+
+.video-thumbnail-container:hover .play-button-overlay {
+  transform: scale(1.1);
+  background: rgba(76, 194, 255, 1);
+}
+
+.video-thumbnail-label {
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Fullscreen video modal */
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.video-modal video {
+  max-width: 95%;
+  max-height: 95%;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.video-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: var(--text);
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.video-modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 @media (max-width: 768px) {
   article img {
     max-width: 100%;
   }
   article video {
     width: 100%;
+  }
+  .video-thumbnail-container {
+    max-width: 100%;
   }
 }
 
