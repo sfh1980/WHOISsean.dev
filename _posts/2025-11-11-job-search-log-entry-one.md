@@ -15,7 +15,7 @@ Then COVID hit, and those plans were put on hold. But in 2022, I finally took th
 <img src="{{ "/assets/images/AI-gen-grad.png" | relative_url }}" alt="Welcome to whoissean.dev" style="max-width: 30%; height: auto; display: block; margin: 1rem 0;">
 
 The road from then to now has been filled with anxiety, growth, and a lot of late nights. I still consider myself a **junior developer**, and yes, **imposter syndrome** still pops up from time to time. But despite everything, I have no regrets. Better late than never to chase a better life.  
-<img src="{{ "/assets/images/ragrets.jpg" | relative_url }}" alt="No Ragrets" style="max-width: 30%; height: auto; display: block; margin: 1rem 0;">
+<img src="{{ "/assets/images/ragrets.jpg" | relative_url }}" alt="No Ragrets" style="max-width: 10%; height: auto; display: block; margin: 1rem 0;">
 
 ---
 
