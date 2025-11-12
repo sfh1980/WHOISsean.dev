@@ -9,9 +9,12 @@ tags: [job-search, unemployed, log-entry, tech, personal-project, career-change,
 
 ### First We Cry, Then We Get To Work
 
-While the news wasn’t entirely unexpected, learning about my upcoming job transition was still difficult to process.
-> "What am I going to do now?" 
-> "Will my wife be disappointed in me?" 
+While the news wasn't entirely unexpected, learning about my upcoming job transition was still difficult to process.
+
+> "What am I going to do now?"
+>
+> "Will my wife be disappointed in me?"
+>
 > "Will I lose my house and be forced out on to the streets?"
 
 So many anxious thoughts hit me all at once—so many questions, so many things to fix or prepare for. The shock took a bit to wear off, but once it did, I got to work. I updated my résumé, refreshed my online profiles, reached out to people in my network, and started planning my next steps.
@@ -22,9 +25,11 @@ My first role at **Richmond Ambulance Authority** was all about modernizing an e
 
 ### Let's Get Started
 
-Because I still consider myself a **junior developer** and not quite ready to open an IDE and start coding blindly, I use tools like **ChatGPT** and the **Cursor IDE**. While I have a reliance on agentic CLI tools, I don’t have full trust in them. I try to lean on something I was taught that has never left my mind: 
+Because I still consider myself a **junior developer** and not quite ready to open an IDE and start coding blindly, I use tools like **ChatGPT** and the **Cursor IDE**. While I have a reliance on agentic CLI tools, I don't have full trust in them. I try to lean on something I was taught that has never left my mind:
+
 > "Little code, test. Little code, test."
-With that mindset, I trained Cursor’s AI to make the experience of building this project educational. I also trained it not to auto-refactor or auto-code everything. I wanted to expand my knowledge with every keystroke and line of code. 
+
+With that mindset, I trained Cursor's AI to make the experience of building this project educational. I also trained it not to auto-refactor or auto-code everything. I wanted to expand my knowledge with every keystroke and line of code. 
 Below are a few examples of how I applied **prompt engineering** to achieve that goal:
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0;">
   <img src="{{ "/assets/images/agent-prompt-example-one.png" | relative_url }}" alt="Prompt example: Database-aware ID lesson" style="flex: 1 1 200px; max-width: 22%; min-width: 180px; height: auto; border-radius: 8px;">
