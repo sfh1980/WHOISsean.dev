@@ -2,7 +2,7 @@
 layout: post
 title: "Job Search Log Entry Five: The Search Continues And New Projects Keep Happening"
 description: "Let's talk about unemployment, job searches and how I'm continuing to add to my resume"
-tags: []
+tags: [job search, unemployment, career change, personal projects, homelab, media server, Linux, Proxmox, Plex, Jellyfin, resume building]
 ---
 
 ## I Bet You're Wondering How We Got Here...
