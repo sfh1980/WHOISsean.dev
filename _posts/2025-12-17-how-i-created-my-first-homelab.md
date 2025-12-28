@@ -38,7 +38,7 @@ After removing the Optane NVMe drive, I considered formatting it and throwing it
 
 2. Next up: creating a bootable USB drive. Since this was a blank NVMe drive, the installation *should* have been straightforward. But let’s be honest — in IT, anything can go sideways. Expect nothing; prepare for everything. I followed the instructions provided on the [Ubuntu website](https://ubuntu.com/download/desktop).
     - Admittedly, I was convinced I was about to break something right up until I saw the language selection screen.
-    <img src="{{ "/assets/images/ubuntu-install-language.jpg" | relative_url }}" alt="Ubuntu language selection screen" style="max-width: 50%; height: auto; display: block; margin: 1rem 0;">
+    <img src="{{ "/assets/images/ubuntu-install-language.jpeg" | relative_url }}" alt="Ubuntu language selection screen" style="max-width: 50%; height: auto; display: block; margin: 1rem 0;">
 
 3. OK, so you have Ubuntu installed, loaded and ready to roll, now what? Extra storage! I ended up repurposing an old 1TB HDD.
     - Since this HDD had previously been bootable and contained an operating system, the laptop was caught in a boot loop and emitted some very concerning beeps. I had to boot from the Ubuntu USB again, enter recovery mode, and reformat the HDD properly before it could be used as storage.
