@@ -160,6 +160,26 @@ section#recent-posts ul { padding-left: 0; }
 section#recent-posts li { list-style: none; margin-bottom: 1rem; }
 
 
+/* Post tags */
+.post-tags {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.post-tags .tags-label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+.post-tags .tag {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.post-tags .tag:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 /* Post actions and comments */
 .post-actions { margin: 1.5rem 0 0; }
 .post-actions .actions-row {
