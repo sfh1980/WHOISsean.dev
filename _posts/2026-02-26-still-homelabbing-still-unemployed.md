@@ -2,7 +2,7 @@
 layout: post
 title: "Shouldn't Hobbies Be Cheap And Fun?"
 description: "Part VII of my homelab journey: Homelabbing is not a cheap hobby!"
-tags: [job search, homelab, media server, linux, jellyfin, docker, truenas, truenas-scale, dell-optiplex, NAS, storage, file-system-stack, self-hosted, resume building, ARR-stack, VPN, Fire-Stick, PlayStation]
+tags: [job search, unemployment, homelab, media server, linux, jellyfin, docker, truenas, truenas-scale, dell-optiplex, NAS, self-hosted, resume building, OPNsense, network-topology, virtualization, Immich, networking]
 ---
 
 ## Recap
@@ -32,8 +32,8 @@ Anywho, I still continue to submit applications and collect unemployment. Let's 
 
 So this is an approximation of the topology of my homelab in its current state. *(Click to view full size)*
 
-<a href="{{ "/assets/images/homelab-net-topology.png" | relative_url }}" class="glightbox" data-glightbox="title: Current homelab topology" data-gallery="topology">
-  <img src="{{ "/assets/images/homelab-net-topology.png" | relative_url }}" alt="Topology of my current homelab setup" style="max-width: 100%; max-height: 400px; width: auto; height: auto; display: block; margin: 1rem 0; cursor: pointer; border-radius: 4px; border: 1px solid #ddd;">
+<a href="{{ "/assets/images/home-net-topology.png" | relative_url }}" class="glightbox" data-glightbox="title: Current homelab topology" data-gallery="topology">
+  <img src="{{ "/assets/images/home-net-topology.png" | relative_url }}" alt="Topology of my current homelab setup" style="max-width: 100%; max-height: 400px; width: auto; height: auto; display: block; margin: 1rem 0; cursor: pointer; border-radius: 4px; border: 1px solid #ddd;">
 </a>
 
 Much like any other hobby that one dedicates time and love to, money is always soon to follow. Previous blog posts show I was considering purchasing a whole separate machine to load OPNsense on. I came up with an alternative once I moved my NAS and its peripherals to a media cubby downstairs in my living room.
