@@ -12,6 +12,87 @@ document.addEventListener('click', function (e) {
   dest.focus({ preventScroll: true });
 });
 
+// Workflow screenshot carousels (prev/next + dots)
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('[data-workflow-carousel]').forEach(function (root) {
+    const slides = Array.from(root.querySelectorAll('.workflow-carousel-slide'));
+    if (!slides.length) return;
+
+    const prevBtn = root.querySelector('[data-carousel-prev]');
+    const nextBtn = root.querySelector('[data-carousel-next]');
+    const dotsWrap = root.querySelector('.workflow-carousel-dots');
+    const currentEl = root.querySelector('[data-carousel-current]');
+    const totalEl = root.querySelector('[data-carousel-total]');
+    let index = Math.max(0, slides.findIndex(function (slide) {
+      return slide.classList.contains('is-active');
+    }));
+
+    if (totalEl) totalEl.textContent = String(slides.length);
+
+    if (dotsWrap) {
+      dotsWrap.innerHTML = '';
+      slides.forEach(function (_slide, i) {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'workflow-carousel-dot';
+        dot.setAttribute('role', 'tab');
+        dot.setAttribute('aria-label', 'Go to step ' + (i + 1));
+        dot.addEventListener('click', function () {
+          show(i);
+        });
+        dotsWrap.appendChild(dot);
+      });
+    }
+
+    function show(nextIndex) {
+      index = Math.max(0, Math.min(slides.length - 1, nextIndex));
+      slides.forEach(function (slide, i) {
+        const active = i === index;
+        slide.classList.toggle('is-active', active);
+        slide.hidden = !active;
+      });
+      if (currentEl) currentEl.textContent = String(index + 1);
+      if (prevBtn) prevBtn.disabled = index === 0;
+      if (nextBtn) nextBtn.disabled = index === slides.length - 1;
+      if (dotsWrap) {
+        Array.from(dotsWrap.children).forEach(function (dot, i) {
+          dot.setAttribute('aria-selected', String(i === index));
+        });
+      }
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function () {
+        show(index - 1);
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function () {
+        show(index + 1);
+      });
+    }
+
+    root.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        show(index - 1);
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        show(index + 1);
+      }
+    });
+
+    root.setAttribute('tabindex', '0');
+    show(index);
+  });
+});
+
+// GLightbox for click-to-enlarge galleries
+document.addEventListener('DOMContentLoaded', function () {
+  if (typeof GLightbox !== 'function') return;
+  GLightbox({ selector: '.glightbox' });
+});
+
 // Mobile menu toggle (no-op if button/nav not present)
 document.addEventListener('DOMContentLoaded', function () {
   const btn = document.querySelector('[data-menu-toggle]');
